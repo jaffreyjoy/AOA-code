@@ -16,7 +16,7 @@ int bs(int x[],int f,int l,int k)
 		if(x[m]==k)
 		{
 			res=1;
-			if(val==1)																		
+			if(val==1)
 			{
 				printf("\n2)first=%d  last=%d  middle=%d\n",f,l,m);
 				first=m;
@@ -46,23 +46,23 @@ int main()
 	printf("Enter the elements\n");
 	for(i=0;i<n;i++)
 	{
-		scanf("%d",&a[i]);	
+		scanf("%d",&a[i]);
 	}
 	printf("\nEnter element to be searched\n");
 	scanf("%d",&key);
-	
+
 	printf("\nSTEPS:-\n");
 	//for first
 	val=1;
 	bs(a,0,n-1,key);
-	
+
 	printf("\n-----------------------------------------\n",n);
-	
+
 	//for last
 	val=0;
 	bs(a,0,n-1,key);
 	//
-	
+
 	if(res==0)
 	{
 		printf("Key not found\n");
